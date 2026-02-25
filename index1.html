@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UBUNTU NEWS · South Africa 2025–2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --green:#007A4D; --gold:#FFB612; --red:#DE3831; --navy:#001F5B;
+      --black:#0a0a0a; --off-white:#F5F0E8; --mid-gray:#8a8a8a;
+      --card-bg:#ffffff; --border:#e0d8cc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--off-white);font-family:'Source Sans 3',sans-serif;color:var(--black);min-height:100vh}
+
+    /* TICKER */
+    .ticker-wrap{background:var(--green);overflow:hidden;padding:8px 0;border-bottom:3px solid var(--gold);display:flex;align-items:center}
+    .ticker-label{background:var(--red);color:#fff;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;padding:0 16px;height:28px;display:flex;align-items:center;white-space:nowrap;flex-shrink:0}
+    .ticker-track{overflow:hidden;flex:1}
+    .ticker-content{display:flex;gap:60px;white-space:nowrap;animation:ticker 55s linear infinite;color:#fff;font-size:13px;font-family:'Space Mono',monospace}
+    @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* HEADER */
+    header{background:var(--black);border-bottom:4px solid var(--gold)}
+    .flag-stripe{display:flex;height:5px}
+    .flag-stripe div{flex:1}
+    .fs1{background:var(--red)}.fs2{background:#fff}.fs3{background:var(--navy)}.fs4{background:var(--gold)}.fs5{background:var(--green)}.fs6{background:var(--black)}
+    .header-top{display:flex;justify-content:space-between;align-items:center;padding:18px 32px 12px;border-bottom:1px solid #222;flex-wrap:wrap;gap:12px}
+    .masthead{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(30px,5vw,56px);color:#fff;letter-spacing:-1px;line-height:1}
+    .masthead span{color:var(--gold)}
+    .header-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+    .header-stats{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+    .stat-pill{background:#111;border:1px solid #2a2a2a;padding:5px 12px;display:flex;align-items:center;gap:8px}
+    .sp-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:1.5px;color:#555;text-transform:uppercase}
+    .sp-value{font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#fff;transition:color .4s}
+    .sp-value.up{color:#4ade80!important}.sp-value.down{color:#ef4444!important}
+    .sp-arrow{font-size:11px;transition:color .4s}
+    .live-badge{background:var(--red);color:#fff;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:2px;padding:3px 8px;display:inline-flex;align-items:center;gap:6px}
+    .live-dot{width:7px;height:7px;background:#fff;border-radius:50%;animation:lp 1s ease-in-out infinite}
+    @keyframes lp{0%,100%{opacity:1}50%{opacity:.2}}
+
+    /* NAV */
+    nav.main-nav{background:var(--black);padding:8px 32px;display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+    .nav-btn{background:transparent;border:1px solid #333;color:#aaa;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1.5px;padding:6px 14px;cursor:pointer;transition:all .2s;text-transform:uppercase}
+    .nav-btn:hover,.nav-btn.active{background:var(--gold);color:var(--black);border-color:var(--gold)}
+    .search-wrap{margin-left:auto;display:flex;gap:8px;align-items:center}
+    .search-input{background:#1a1a1a;border:1px solid #333;color:#fff;font-family:'Space Mono',monospace;font-size:12px;padding:6px 14px;outline:none;width:200px;transition:border .2s}
+    .search-input::placeholder{color:#555}
+    .search-input:focus{border-color:var(--gold)}
+
+    /* HERO */
+    .hero-section{padding:28px 32px 0;max-width:1400px;margin:0 auto}
+    .hero-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:auto auto;gap:3px;margin-bottom:3px}
+    .hero-main{grid-row:1/3;position:relative;overflow:hidden;cursor:pointer}
+    .hero-main img{width:100%;height:480px;object-fit:cover;display:block;transition:transform .5s}
+    .hero-main:hover img{transform:scale(1.03)}
+    .hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.93));padding:40px 28px 24px}
+    .hero-cat{background:var(--red);color:#fff;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:2px;padding:3px 10px;margin-bottom:10px;display:inline-block;text-transform:uppercase}
+    .hero-overlay h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(20px,3vw,32px);color:#fff;line-height:1.2;margin-bottom:10px}
+    .hero-overlay p{color:#ccc;font-size:14px;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .hero-meta{margin-top:12px;font-family:'Space Mono',monospace;font-size:11px;color:#aaa}
+    .hero-side{background:var(--card-bg);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:box-shadow .2s;display:flex;flex-direction:column}
+    .hero-side:hover{box-shadow:0 4px 20px rgba(0,0,0,.12)}
+    .hero-side img{width:100%;height:160px;object-fit:cover;transition:transform .4s;display:block}
+    .hero-side:hover img{transform:scale(1.04)}
+    .hero-side .side-content{padding:16px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+    .hero-side h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;line-height:1.35;color:var(--black)}
+
+    /* BADGES */
+    .cat-badge{font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:2px;padding:2px 8px;display:inline-block;text-transform:uppercase;margin-bottom:8px}
+    .cat-politics{background:var(--navy);color:#fff}.cat-economy{background:var(--green);color:#fff}
+    .cat-sports{background:var(--red);color:#fff}.cat-crime{background:#1a1a1a;color:#fff}
+    .cat-health{background:#8E44AD;color:#fff}.cat-tech{background:#17a589;color:#fff}
+    .cat-entertainment{background:#E67E22;color:#fff}.cat-environment{background:#27ae60;color:#fff}
+    .cat-education{background:#2980b9;color:#fff}.cat-world{background:#7f8c8d;color:#fff}
+    .art-meta{font-family:'Space Mono',monospace;font-size:10px;color:var(--mid-gray);margin-top:8px}
+
+    /* MAIN LAYOUT */
+    .main-container{max-width:1400px;margin:0 auto;padding:20px 32px 60px}
+    .section-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;border-bottom:3px solid var(--black);padding-bottom:8px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+    .accent-line{width:4px;height:24px;background:var(--gold);display:inline-block}
+
+    /* CARDS */
+    .news-card{background:var(--card-bg);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:all .25s;height:100%;display:flex;flex-direction:column}
+    .news-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.12);transform:translateY(-3px)}
+    .news-card img{width:100%;height:190px;object-fit:cover;transition:transform .4s;display:block}
+    .news-card:hover img{transform:scale(1.05)}
+    .card-body-custom{padding:16px;flex:1;display:flex;flex-direction:column}
+    .card-body-custom h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;line-height:1.35;margin-bottom:8px}
+    .card-body-custom p{font-size:14px;color:#555;line-height:1.6;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .card-footer-custom{padding:10px 16px 14px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .card-footer-custom .byline{font-family:'Space Mono',monospace;font-size:10px;color:var(--mid-gray)}
+    .read-more{font-family:'Space Mono',monospace;font-size:10px;color:var(--green);text-decoration:none;letter-spacing:1px;font-weight:700}
+    .read-more:hover{color:var(--red)}
+
+    /* LIST CARDS */
+    .list-card{display:flex;gap:16px;background:var(--card-bg);border:1px solid var(--border);padding:14px;cursor:pointer;transition:all .2s;margin-bottom:3px}
+    .list-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateX(4px)}
+    .list-card img{width:110px;height:80px;object-fit:cover;flex-shrink:0;display:block}
+    .list-card-content h5{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;line-height:1.3;margin-bottom:6px}
+    .list-card-content p{font-size:12px;color:#777;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+    /* SIDEBAR */
+    .sidebar-section{border-left:1px solid var(--border);padding-left:24px}
+    .trending-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:all .2s}
+    .trending-item:last-child{border-bottom:none}
+    .trending-item:hover{padding-left:6px}
+    .trending-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:900;color:#e8e0d5;line-height:1;flex-shrink:0;width:42px}
+    .trending-item h6{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;line-height:1.3}
+
+    /* WEATHER WIDGET */
+    .weather-widget{background:linear-gradient(135deg,var(--navy) 0%,#003d80 100%);color:#fff;padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
+    .weather-widget::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.04)}
+    .wcity-btns{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
+    .wcity-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#aac;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:1px;padding:3px 9px;cursor:pointer;transition:all .2s;text-transform:uppercase}
+    .wcity-btn.active,.wcity-btn:hover{background:rgba(255,255,255,.22);color:#fff;border-color:rgba(255,255,255,.5)}
+    .w-city{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#9ab;margin-bottom:4px}
+    .w-main-row{display:flex;align-items:flex-end;gap:12px;margin-bottom:6px}
+    .w-temp{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;line-height:1;transition:opacity .3s}
+    .w-icon{font-size:36px;line-height:1;margin-bottom:4px}
+    .w-desc{font-size:14px;color:#ccd;margin-bottom:0}
+    .w-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12)}
+    .w-stat{background:rgba(255,255,255,.06);padding:8px 10px}
+    .w-stat .wsl{font-family:'Space Mono',monospace;font-size:9px;color:#88a;letter-spacing:1px;text-transform:uppercase}
+    .w-stat .wsv{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;color:#fff;margin-top:2px;transition:opacity .3s}
+    .w-updated{font-family:'Space Mono',monospace;font-size:9px;color:#446;margin-top:10px}
+
+    /* MARKETS */
+    .market-widget{background:var(--card-bg);border:1px solid var(--border);padding:16px;margin-bottom:16px}
+    .mkt-header{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--mid-gray);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+    .mkt-live-dot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:lp 1.2s ease-in-out infinite}
+    .mkt-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border)}
+    .mkt-row:last-child{border-bottom:none}
+    .mkt-name{font-family:'Space Mono',monospace;font-size:10px;color:#444}
+    .mkt-val{font-family:'Space Mono',monospace;font-size:13px;font-weight:700;transition:color .5s}
+    .mkt-chg{font-family:'Space Mono',monospace;font-size:10px;padding:2px 6px}
+    .chg-up{color:#16a34a;background:#f0fdf4}.chg-down{color:#dc2626;background:#fef2f2}
+
+    /* ESKOM */
+    .eskom-widget{background:var(--black);padding:16px;margin-bottom:16px}
+    .ew-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .ew-title{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:#555}
+    .ew-badge{font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:3px 10px}
+    .ew-ok{background:var(--green);color:#fff}.ew-bad{background:var(--red);color:#fff}
+    .ew-bar-bg{background:#1a1a1a;height:8px;margin-bottom:8px;overflow:hidden}
+    .ew-bar{height:100%;transition:width 1.2s ease,background .8s ease}
+    .ew-row{font-family:'Space Mono',monospace;font-size:10px;color:#444;display:flex;justify-content:space-between;margin-bottom:4px}
+    .ew-eaf{font-size:36px;font-weight:900;font-family:'Playfair Display',serif;color:#fff;margin-top:8px;transition:all .5s}
+    .ew-eaf small{font-size:12px;color:#333;font-family:'Space Mono',monospace;margin-left:6px}
+    .ew-updated{font-family:'Space Mono',monospace;font-size:9px;color:#2a2a2a;margin-top:6px}
+
+    /* MODAL */
+    .article-modal .modal-dialog{max-width:780px}
+    .article-modal .modal-content{border:none;border-radius:0}
+    .article-modal .modal-header{background:var(--black);color:#fff;border-radius:0;border:none;padding:20px 28px}
+    .article-modal .modal-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;line-height:1.3}
+    .article-modal .modal-body{padding:28px}
+    .article-modal .modal-body img{width:100%;height:300px;object-fit:cover;margin-bottom:20px;display:block}
+    .article-modal .modal-body p{font-size:16px;line-height:1.85;color:#333;margin-bottom:16px}
+    .article-modal .btn-close{filter:invert(1)}
+    .modal-byline{font-family:'Space Mono',monospace;font-size:11px;color:#888;margin-top:6px;display:flex;align-items:center;gap:10px}
+    .modal-byline .author-tag{background:var(--gold);color:var(--black);font-weight:700;padding:2px 8px;font-size:9px;letter-spacing:1px}
+    .modal-stats{display:flex;background:#f9f5ed;border:1px solid var(--border);margin-bottom:20px}
+    .modal-stat{flex:1;padding:14px 12px;text-align:center;border-right:1px solid var(--border)}
+    .modal-stat:last-child{border-right:none}
+    .msv{font-family:'Playfair Display',serif;font-size:26px;font-weight:900;color:var(--navy);line-height:1}
+    .msl{font-family:'Space Mono',monospace;font-size:9px;color:var(--mid-gray);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
+
+    /* SKELETONS */
+    .skeleton{background:linear-gradient(90deg,#f0ebe3 25%,#e8e0d5 50%,#f0ebe3 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+    @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    .skel-img{height:190px}.skel-title{height:20px;margin:14px 14px 8px;border-radius:2px}
+    .skel-text{height:14px;margin:0 14px 6px;border-radius:2px}.skel-text.w80{width:80%}.skel-text.w60{width:60%}
+
+    /* ANIMATIONS */
+    .fade-in{animation:fadeIn .5s ease forwards}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .stagger>*{opacity:0;animation:fadeIn .5s ease forwards}
+    .stagger>*:nth-child(1){animation-delay:.05s}.stagger>*:nth-child(2){animation-delay:.15s}
+    .stagger>*:nth-child(3){animation-delay:.25s}.stagger>*:nth-child(4){animation-delay:.35s}
+    .stagger>*:nth-child(5){animation-delay:.45s}.stagger>*:nth-child(6){animation-delay:.55s}
+
+    /* FOOTER */
+    footer{background:var(--black);color:#aaa;padding:40px 32px 20px;font-family:'Space Mono',monospace;font-size:11px}
+    .footer-logo{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;color:#fff;margin-bottom:20px}
+    .footer-logo span{color:var(--gold)}
+    footer a{color:#666;text-decoration:none}
+    footer a:hover{color:var(--gold)}
+
+    @media(max-width:992px){
+      .hero-grid{grid-template-columns:1fr}.hero-main{grid-row:auto}.hero-main img{height:280px}
+      .sidebar-section{border-left:none;padding-left:0;border-top:1px solid var(--border);padding-top:24px;margin-top:8px}
+    }
+    @media(max-width:576px){
+      .main-container{padding:16px}.hero-section{padding:16px 16px 0}
+      nav.main-nav{padding:8px 12px}.header-top{padding:12px 16px 10px}
+      .header-stats{gap:4px}.stat-pill{padding:4px 8px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- BREAKING TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">BREAKING</div>
+  <div class="ticker-track">
+    <div class="ticker-content" id="tickerContent"></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="flag-stripe"><div class="fs1"></div><div class="fs2"></div><div class="fs3"></div><div class="fs4"></div><div class="fs5"></div><div class="fs6"></div></div>
+  <div class="header-top">
+    <div>
+      <div class="masthead">UBUNTU<span>NEWS</span></div>
+      <div style="color:#3a3a3a;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;margin-top:4px;">SOUTH AFRICA · TRUSTED · INDEPENDENT</div>
+    </div>
+    <div class="header-right">
+      <div style="font-family:'Space Mono',monospace;font-size:10px;color:#444" id="currentDate"></div>
+      <div class="header-stats">
+        <div class="stat-pill">
+          <div><div class="sp-label">ZAR/USD</div><div class="sp-value" id="hRand">R17.80</div></div>
+          <div class="sp-arrow" id="hRandArrow">▲</div>
+        </div>
+        <div class="stat-pill">
+          <div><div class="sp-label">JSE ALL SHARE</div><div class="sp-value" id="hJSE">94,320</div></div>
+          <div class="sp-arrow" id="hJSEArrow">▲</div>
+        </div>
+        <div class="stat-pill">
+          <div><div class="sp-label">BRENT CRUDE</div><div class="sp-value" id="hOil">$82.14</div></div>
+          <div class="sp-arrow" id="hOilArrow">▲</div>
+        </div>
+        <div class="stat-pill">
+          <div><div class="sp-label">GOLD (OZ)</div><div class="sp-value" id="hGold">$2,018</div></div>
+          <div class="sp-arrow" id="hGoldArrow">▲</div>
+        </div>
+        <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <button class="nav-btn active" onclick="filterCat('all',this)">ALL</button>
+    <button class="nav-btn" onclick="filterCat('politics',this)">POLITICS</button>
+    <button class="nav-btn" onclick="filterCat('economy',this)">ECONOMY</button>
+    <button class="nav-btn" onclick="filterCat('crime',this)">CRIME</button>
+    <button class="nav-btn" onclick="filterCat('sports',this)">SPORTS</button>
+    <button class="nav-btn" onclick="filterCat('health',this)">HEALTH</button>
+    <button class="nav-btn" onclick="filterCat('tech',this)">TECH</button>
+    <button class="nav-btn" onclick="filterCat('entertainment',this)">ENTERTAINMENT</button>
+    <button class="nav-btn" onclick="filterCat('environment',this)">ENVIRONMENT</button>
+    <div class="search-wrap">
+      <input class="search-input" id="searchInput" type="text" placeholder="Search articles…" oninput="doSearch(this.value)"/>
+      <button class="nav-btn"><i class="fa fa-search"></i></button>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-section" id="heroSection"></section>
+
+<!-- MAIN -->
+<div class="main-container">
+  <div class="row g-4">
+
+    <!-- NEWS GRID -->
+    <div class="col-lg-8">
+      <div class="section-title"><span class="accent-line"></span><span id="sectionLabel">LATEST NEWS</span></div>
+      <div class="row g-3 stagger" id="newsGrid">
+        <div class="col-md-6"><div class="news-card"><div class="skeleton skel-img"></div><div class="skeleton skel-title"></div><div class="skeleton skel-text w80"></div><div class="skeleton skel-text w60"></div></div></div>
+        <div class="col-md-6"><div class="news-card"><div class="skeleton skel-img"></div><div class="skeleton skel-title"></div><div class="skeleton skel-text w80"></div><div class="skeleton skel-text w60"></div></div></div>
+        <div class="col-md-6"><div class="news-card"><div class="skeleton skel-img"></div><div class="skeleton skel-title"></div><div class="skeleton skel-text w80"></div><div class="skeleton skel-text w60"></div></div></div>
+        <div class="col-md-6"><div class="news-card"><div class="skeleton skel-img"></div><div class="skeleton skel-title"></div><div class="skeleton skel-text w80"></div><div class="skeleton skel-text w60"></div></div></div>
+      </div>
+      <div id="noResults" style="display:none;text-align:center;padding:60px;color:var(--mid-gray);font-family:'Space Mono',monospace;font-size:13px;">
+        <i class="fa fa-search" style="font-size:40px;margin-bottom:16px;display:block"></i>NO ARTICLES FOUND
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="col-lg-4">
+
+      <!-- WEATHER -->
+      <div class="weather-widget">
+        <div class="wcity-btns" id="wcityBtns"></div>
+        <div class="w-city" id="wCity">JOHANNESBURG · GAUTENG</div>
+        <div class="w-main-row">
+          <div class="w-temp" id="wTemp">27°C</div>
+          <div class="w-icon" id="wIcon">⛅</div>
+        </div>
+        <div class="w-desc" id="wDesc">Partly Cloudy</div>
+        <div class="w-grid">
+          <div class="w-stat"><div class="wsl">HUMIDITY</div><div class="wsv" id="wHum">42%</div></div>
+          <div class="w-stat"><div class="wsl">WIND</div><div class="wsv" id="wWind">14 km/h</div></div>
+          <div class="w-stat"><div class="wsl">FEELS LIKE</div><div class="wsv" id="wFeels">25°C</div></div>
+          <div class="w-stat"><div class="wsl">UV INDEX</div><div class="wsv" id="wUV">7 High</div></div>
+        </div>
+        <div class="w-updated" id="wUpdated">LOADING…</div>
+      </div>
+
+      <!-- MARKETS -->
+      <div class="market-widget">
+        <div class="mkt-header">
+          <span>LIVE MARKET DATA · SAST</span>
+          <span class="mkt-live-dot"></span>
+        </div>
+        <div id="mktRows"></div>
+      </div>
+
+      <!-- ESKOM -->
+      <div class="eskom-widget">
+        <div class="ew-head">
+          <span class="ew-title">ESKOM · LOAD SHEDDING STATUS</span>
+          <span class="ew-badge ew-ok" id="ewBadge">SUSPENDED</span>
+        </div>
+        <div class="ew-bar-bg"><div class="ew-bar" id="ewBar"></div></div>
+        <div class="ew-row"><span>Energy Availability Factor (EAF)</span><span id="ewPct">68%</span></div>
+        <div class="ew-eaf" id="ewEAF">68.4% <small>EAF</small></div>
+        <div class="ew-updated" id="ewUpdated">UPDATING…</div>
+      </div>
+
+      <!-- TRENDING -->
+      <div class="sidebar-section">
+        <div class="section-title"><span class="accent-line"></span>MOST READ</div>
+        <div id="trendingList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MORE STORIES -->
+  <div class="mt-5">
+    <div class="section-title"><span class="accent-line"></span>MORE STORIES</div>
+    <div id="listGrid"></div>
+  </div>
+</div>
+
+<!-- ARTICLE MODAL -->
+<div class="modal fade article-modal" id="articleModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <div id="mCat"></div>
+          <div class="modal-title" id="mTitle"></div>
+          <div class="modal-byline">
+            <span class="author-tag">BY LONA MATSHINGANA</span>
+            <span id="mMeta"></span>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="mImage" src="" alt=""/>
+        <div class="modal-stats" id="mStats"></div>
+        <div id="mBody"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="footer-logo">UBUNTU<span>NEWS</span></div>
+        <p style="font-size:12px;color:#555;font-family:'Source Sans 3',sans-serif;line-height:1.8">
+          South Africa's independent digital newsroom. Covering politics, economy, sport, culture and communities from Limpopo to the Cape.<br/><br/>
+          <em style="color:#444">Umuntu ngumuntu ngabantu.</em>
+        </p>
+      </div>
+      <div class="col-md-2" style="margin-top:8px">
+        <p style="color:#fff;margin-bottom:12px">SECTIONS</p>
+        <div style="line-height:2.6"><a href="#">Politics</a><br/><a href="#">Economy</a><br/><a href="#">Crime</a><br/><a href="#">Sport</a></div>
+      </div>
+      <div class="col-md-2" style="margin-top:8px">
+        <p style="color:#fff;margin-bottom:12px">MORE</p>
+        <div style="line-height:2.6"><a href="#">Health</a><br/><a href="#">Technology</a><br/><a href="#">Entertainment</a><br/><a href="#">Environment</a></div>
+      </div>
+      <div class="col-md-4" style="margin-top:8px">
+        <p style="color:#fff;margin-bottom:12px">NEWSLETTER</p>
+        <p style="color:#555;font-size:12px;font-family:'Source Sans 3',sans-serif;margin-bottom:12px">Get Lona Matshingana's top SA stories delivered to your inbox every morning.</p>
+        <div style="display:flex;gap:8px">
+          <input type="email" placeholder="your@email.co.za" style="background:#1a1a1a;border:1px solid #2a2a2a;color:#fff;padding:8px 12px;font-family:'Space Mono',monospace;font-size:11px;flex:1;outline:none"/>
+          <button style="background:var(--gold);color:var(--black);border:none;padding:8px 16px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;cursor:pointer">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #1a1a1a;margin-top:32px;padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#333">
+      <span>© 2026 UbuntuNews · Johannesburg, South Africa</span>
+      <span>All reporting by <strong style="color:#666">Lona Matshingana</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// ─────────────────────────────────────────────
+//  MOCK NEWS API
+// ─────────────────────────────────────────────
+const AUTHOR = 'Lona Matshingana';
+
+const MockAPI = (() => {
+  const articles = [
+    {
+      id:1, category:'politics', featured:true,
+      title:'GNU Coalition Faces First Major Test as ANC Splinter Faction Threatens Parliament',
+      summary:'The Government of National Unity faces a critical vote as dissident ANC members align with EFF to block the national budget in what analysts call the coalition\'s biggest challenge since formation.',
+      body:`The Government of National Unity, formed after the historic 2024 elections, is facing its first major parliamentary crisis. A breakaway ANC faction aligned with the Radical Economic Transformation grouping has announced it will vote alongside the EFF to reject the 2025 mid-term budget adjustments proposed by Finance Minister Enoch Godongwana.\n\nThe budget proposes a 1.5% VAT increase phased over two years to close a fiscal deficit estimated at R350 billion. The EFF's Julius Malema called it "an attack on the poor," while the ANC splinter bloc argues it undermines manifesto commitments.\n\nPresident Ramaphosa held emergency talks with DA leader John Steenhuisen and IFP president Velenkosini Hlabisa. A spokesperson described discussions as "robust and constructive."\n\nPolitical analysts warn a failed budget vote could trigger a constitutional crisis not seen since the Zuma era. Markets reacted nervously — the rand weakened to R19.40 to the dollar by early Wednesday.`,
+      date:'2026-02-20', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=900&q=80',
+      stats:[{v:'R350bn',l:'Fiscal Deficit'},{v:'1.5%',l:'Proposed VAT Rise'},{v:'R19.40',l:'Rand Weakness Peak'}]
+    },
+    {
+      id:2, category:'politics', featured:false,
+      title:'MK Party Files Court Papers to Dissolve GNU Agreement',
+      summary:'uMkhonto we Sizwe takes legal action claiming the coalition violates constitutional principles of proportional representation.',
+      body:`The uMkhonto we Sizwe party filed urgent papers in the North Gauteng High Court challenging the legality of the Government of National Unity.\n\nThe party argues the coalition excluded MK Party despite it being the second-largest party in KwaZulu-Natal, violating the spirit of constitutional democracy. The application names President Ramaphosa and Speaker Thandi Modise as respondents.\n\nLegal experts are divided. Constitutional law professor Pierre de Vos noted coalition agreements are largely not justiciable, while attorney Dali Mpofu argued the application has merit on the proportionality question.\n\nThe case is set for urgent hearing next month.`,
+      date:'2026-02-18', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80',
+      stats:[{v:'2nd',l:'MK Ranking in KZN'},{v:'2',l:'Respondents Named'},{v:'54%',l:'GNU Parliamentary Support'}]
+    },
+    {
+      id:3, category:'politics', featured:false,
+      title:'Cape Town Hosts Historic African Union Summit on Continental Integration',
+      summary:'Heads of state from 54 African nations gather at the Cape Town Convention Centre to discuss the African Continental Free Trade Area implementation.',
+      body:`Cape Town became the centre of continental diplomacy as the African Union convened an extraordinary summit on the implementation of the AfCFTA agreement.\n\nPresident Ramaphosa, as current AU champion for AfCFTA, called on member states to eliminate non-tariff barriers. "The potential of this continent lies in its integration," he said to a standing ovation.\n\nThe summit produced the Cape Town Declaration, committing signatories to a 30% reduction in non-tariff barriers by 2027. South Africa signed 14 bilateral trade facilitation agreements on the summit's margins.`,
+      date:'2026-01-30', readTime:'7 min',
+      image:'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80',
+      stats:[{v:'54',l:'Nations Represented'},{v:'14',l:'Trade Deals Signed'},{v:'30%',l:'Barrier Reduction Target'}]
+    },
+    {
+      id:4, category:'economy', featured:true,
+      title:'Eskom Achieves 180-Day No Load Shedding Milestone as Renewables Surge',
+      summary:'South Africa marks six months without blackouts as Kusile Unit 5 and rapid renewable scale-up add 2,400MW to the national grid.',
+      body:`South Africa celebrated a historic milestone: 180 consecutive days without load shedding — the longest uninterrupted power supply in more than a decade.\n\nEskom CEO Dan Marokane credited Kusile Power Station Unit 5 (800MW), scaling of REIPP projects (1,600MW), and improved maintenance lifting the fleet's Energy Availability Factor to 68%.\n\nThe milestone has had real economic effects. Business confidence has risen to its highest since 2015. National Treasury estimates each stage of load shedding costs R4 billion per week — so the 26-week reprieve saved an estimated R104 billion.\n\nHowever, energy analyst Chris Yelland cautioned: "We are still operating with very thin reserve margins. A return to maintenance backlogs could quickly unravel these gains."`,
+      date:'2026-02-15', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=900&q=80',
+      stats:[{v:'180',l:'Days Without Loadshedding'},{v:'68%',l:'Eskom EAF'},{v:'R104bn',l:'Estimated Economy Savings'}]
+    },
+    {
+      id:5, category:'economy', featured:false,
+      title:'Rand Strengthens to R17.80 as GDP Growth Exceeds Expectations',
+      summary:'South Africa\'s currency hits a two-year high after Statistics SA announces 2.1% GDP growth for Q3 2025, beating the 1.4% forecast.',
+      body:`The rand surged to R17.80 to the US dollar — its strongest since early 2023 — after Statistics SA reported 2.1% annualised GDP growth in Q3 2025, far exceeding the 1.4% forecast.\n\nGrowth was broad-based: agriculture surged 8.3% on bumper maize and citrus harvests; manufacturing grew 3.1%; finance and business services expanded 2.8%.\n\nSA Reserve Bank Governor Lesetja Kganyago described the results as "encouraging but not grounds for complacency," noting unemployment remains critically high at 31.9%.\n\nThe JSE All Share Index closed at an all-time high of 94,320 points on the same day.`,
+      date:'2026-02-12', readTime:'4 min',
+      image:'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=80',
+      stats:[{v:'2.1%',l:'Q3 GDP Growth'},{v:'R17.80',l:'ZAR/USD High'},{v:'31.9%',l:'Unemployment Rate'}]
+    },
+    {
+      id:6, category:'economy', featured:false,
+      title:'Volkswagen and Toyota Announce R8.2bn SA Manufacturing Expansion',
+      summary:'Both automotive giants confirm combined investment to scale up South African production for global export markets.',
+      body:`Volkswagen Group Africa and Toyota South Africa announced combined investments of R8.2 billion to expand local manufacturing facilities.\n\nVolkswagen will invest R4.7 billion in its Uitenhage plant to produce a new generation of electric and hybrid SUVs for local and European markets, creating 1,200 permanent jobs and supporting 8,000 more in the supply chain.\n\nToyota's R3.5 billion Prospecton upgrade will increase Corolla Cross and Hilux production, with 40% earmarked for export.\n\nTrade Minister Parks Tau called the announcements "a resounding endorsement of the GNU's economic stewardship."`,
+      date:'2026-01-25', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1617788138017-80ad40651399?w=900&q=80',
+      stats:[{v:'R8.2bn',l:'Combined Investment'},{v:'1,200',l:'New Permanent Jobs'},{v:'40%',l:'Toyota Export Target'}]
+    },
+    {
+      id:7, category:'crime', featured:false,
+      title:'SAPS Hawks Dismantle Largest Drug Ring in Gauteng History',
+      summary:'A joint Hawks-SAPS operation in Ekurhuleni uncovers a R2.3 billion methamphetamine laboratory linked to international cartels.',
+      body:`Hawks and the SAPS Narcotics Bureau executed a predawn raid on a warehouse complex in Ekurhuleni, seizing what officials described as the largest drug manufacturing operation ever uncovered in Gauteng.\n\nThe facility, disguised as a food processing plant, contained chemical reactors capable of producing 200kg of high-purity methamphetamine per week. Finished product had a street value of R2.3 billion.\n\nNine suspects were arrested: four Chinese nationals, three South Africans, and two Mozambican nationals. Police allege the ring supplied markets across Southern Africa and distributors in Australia.\n\nNational Commissioner Fannie Masemola praised the 14-month undercover operation as "a devastating blow to organised crime."`,
+      date:'2026-02-19', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=900&q=80',
+      stats:[{v:'R2.3bn',l:'Street Value'},{v:'200kg',l:'Weekly Production Capacity'},{v:'9',l:'Suspects Arrested'}]
+    },
+    {
+      id:8, category:'crime', featured:false,
+      title:'Bogus Doctor Sentenced to 35 Years for Patient Deaths in Eastern Cape',
+      summary:'A man who practised medicine for 11 years without qualifications is jailed after three patients die following botched procedures.',
+      body:`The East London High Court sentenced Mandlenkosi Tshabalala, 44, to 35 years in prison after he posed as a qualified doctor at Eastern Cape clinics for over a decade.\n\nHe performed surgical procedures, prescribed potent medications, and conducted anaesthesia without any training. Three patients died as a direct result of his negligence; a further 14 suffered permanent injury.\n\nJudge Nomvula Mthembu found the fraud was "sustained and cynical, motivated entirely by financial gain." The National Department of Health has launched an investigation into how multiple facilities failed to verify his forged credentials over such a long period.`,
+      date:'2026-02-10', readTime:'4 min',
+      image:'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=900&q=80',
+      stats:[{v:'35 yrs',l:'Prison Sentence'},{v:'11 yrs',l:'Practising Illegally'},{v:'17',l:'Total Victims'}]
+    },
+    {
+      id:9, category:'sports', featured:true,
+      title:'Springboks Secure Historic Back-to-Back Rugby World Cup Victory in Dublin',
+      summary:'South Africa defeats Ireland 31–22 in an epic final to become the first nation ever to win three consecutive Rugby World Cups.',
+      body:`The Springboks secured a record third consecutive Rugby World Cup title, defeating Ireland 31–22 at the Aviva Stadium in Dublin.\n\nCoach Rassie Erasmus's side trailed 15–7 at halftime, but a stunning second-half fightback — inspired by man-of-the-match Siya Kolisi and replacement flank Kwagga Smith — turned the game completely.\n\nHandré Pollard contributed 16 points from the boot. Tries from Kurt-Lee Arendse, Eben Etzebeth, and Makazole Mapimpi sealed the result.\n\n"This team represents the best of who we can be as a nation," said President Ramaphosa, who interrupted a cabinet meeting to watch the final minutes.`,
+      date:'2025-11-02', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1485286162995-aa63d31c06ba?w=900&q=80',
+      stats:[{v:'31–22',l:'Final Score'},{v:'3rd',l:'Consecutive RWC Title'},{v:'16pts',l:'Pollard Contribution'}]
+    },
+    {
+      id:10, category:'sports', featured:false,
+      title:'Caster Semenya Wins 800m Gold at Paris Diamond League in Emotional Comeback',
+      summary:'Semenya clocks 1:54.89 in her return to international competition following the landmark European Court ruling in her favour.',
+      body:`Caster Semenya returned to international competition in the most dramatic fashion possible, winning the 800m at the Paris Diamond League in 1:54.89 — the fastest in the world for the 2025 season.\n\nThe victory follows the European Court of Human Rights ruling that World Athletics' testosterone regulations violated Semenya's right to non-discrimination.\n\nSemenya, now 34, was visibly emotional. "This medal is for every child who was ever told they were not enough," she said.\n\nThe crowd of 70,000 at the Stade de France gave a standing ovation. Athletics South Africa president James Moloi called it "a triumph of justice as much as sport."`,
+      date:'2025-06-18', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=900&q=80',
+      stats:[{v:'1:54.89',l:'Winning Time'},{v:'#1',l:'2025 World Season Ranking'},{v:'70,000',l:'Stadium Crowd'}]
+    },
+    {
+      id:11, category:'sports', featured:false,
+      title:'Bafana Bafana Qualifies for 2026 FIFA World Cup After Beating Nigeria',
+      summary:'South Africa secures their World Cup spot with a 2-0 victory over Nigeria, ending a 28-year absence from the global showpiece.',
+      body:`Bafana Bafana qualified for the 2026 FIFA World Cup with a 2-0 victory over Nigeria at FNB Stadium before a sold-out crowd of 94,000, ending the country's agonising 28-year absence from football's greatest tournament.\n\nGoals from Percy Tau (34') and Themba Zwane (71') sealed a historic night. Supporters flooded streets across Johannesburg, Durban, and Cape Town.\n\nCoach Hugo Broos was carried off the pitch on his players' shoulders. "These boys have made history. They deserved this more than anyone."\n\nSouth Africa will feature at the 2026 World Cup co-hosted by USA, Canada, and Mexico.`,
+      date:'2025-09-10', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=900&q=80',
+      stats:[{v:'2–0',l:'Final Score'},{v:'28 yrs',l:'World Cup Absence'},{v:'94,000',l:'FNB Stadium Crowd'}]
+    },
+    {
+      id:12, category:'health', featured:false,
+      title:'South Africa Launches Universal Health Coverage Pilot in Three Provinces',
+      summary:'The NHI pilot provides free primary healthcare to 4.2 million residents in Gauteng, Limpopo, and the Western Cape.',
+      body:`South Africa took its most significant step towards universal health coverage as the NHI pilot launched in Gauteng, Limpopo, and the Western Cape, covering 4.2 million people with free access to GP visits, essential medicines, diagnostics, and maternal care.\n\nHealth Minister Aaron Motsoaledi called it "a new chapter in the story of healthcare justice." Legal challenges from private hospital groups and medical associations continue.\n\nA Democratic Alliance-secured amendment allows private providers to act as accredited NHI service providers — a compromise health economists say significantly improves feasibility. The 18-month pilot will inform national rollout decisions.`,
+      date:'2025-03-01', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=900&q=80',
+      stats:[{v:'4.2M',l:'Pilot Beneficiaries'},{v:'3',l:'Provinces Covered'},{v:'18mo',l:'Pilot Duration'}]
+    },
+    {
+      id:13, category:'health', featured:false,
+      title:'TB Rates in SA Drop 18% — WHO Credits Community Health Worker Programme',
+      summary:'A landmark WHO report highlights South Africa\'s community TB programme as a global model, with case rates at their lowest since 2008.',
+      body:`Tuberculosis infection rates in South Africa have fallen 18% over two years, according to a World Health Organisation report released in Geneva.\n\nThe WHO credited the Department of Health's Community Health Worker programme — over 75,000 CHWs deployed in high-burden townships and rural areas — as the primary driver of decline.\n\n"South Africa's CHW model is now studied by countries across sub-Saharan Africa and beyond," said WHO Director-General Dr Tedros Adhanom Ghebreyesus.\n\nDrug-resistant TB fell 22% over the same period. South Africa still carries the world's third-highest TB burden, but the decline is the steepest since systematic records began in 2008.`,
+      date:'2025-07-14', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80',
+      stats:[{v:'−18%',l:'TB Rate Drop'},{v:'75,000',l:'Community Health Workers'},{v:'−22%',l:'Drug-Resistant TB Drop'}]
+    },
+    {
+      id:14, category:'tech', featured:false,
+      title:'Cape Town Emerges as Top African AI Hub as Investment Triples to R12 Billion',
+      summary:'International venture capital pours into Cape Town\'s tech ecosystem, with AI startups raising a record R12 billion in 2025.',
+      body:`Cape Town cemented its status as Africa's leading AI hub after investment reached a record R12 billion in 2025 — triple the 2023 figure.\n\nPartech Africa found 62 AI-focused startups received funding in the Western Cape, spanning fintech, agritech, healthtech, and legal tech. Anchor investments from Microsoft's African Development Centre, Google, and a €200 million German development fund catalysed the activity.\n\nStandout raises included R2.4 billion by fintech Stitch, and R1.1 billion for agricultural AI platform Aerobotics, now operating in 22 countries.\n\n"The combination of world-class universities, growing technical talent, and improving connectivity is producing a flywheel effect," said CapeTech CEO Thierry Muthondani.`,
+      date:'2025-04-22', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&q=80',
+      stats:[{v:'R12bn',l:'2025 VC Investment'},{v:'62',l:'AI Startups Funded'},{v:'3×',l:'Growth Since 2023'}]
+    },
+    {
+      id:15, category:'tech', featured:false,
+      title:'Sentech Completes 5G Rollout to All Nine Provincial Capitals',
+      summary:'South Africa reaches a digital connectivity milestone as 5G coverage extends to every major city, with rural broadband expansion next.',
+      body:`Sentech completed 5G coverage in all nine provincial capitals, a milestone in South Africa's digital connectivity journey.\n\nThe rollout, which began in 2022, cost R15 billion and was partly funded by the ICASA spectrum auction. Johannesburg, Cape Town, and Durban were connected in 2023; Polokwane, Mbombela, Bhisho, Mahikeng, Kimberley, and Bloemfontein have now followed.\n\nCommunications Minister Mondli Gungubele said the next priority is extending fibre and 4G to rural areas, targeting 80% national coverage by 2028. A Rural Digital Infrastructure Fund of R4.2 billion has been established.\n\nSouth Africa's smartphone penetration stands at 68%, compared to a sub-Saharan African average of 49%.`,
+      date:'2025-08-30', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80',
+      stats:[{v:'9/9',l:'Capitals with 5G'},{v:'R15bn',l:'Rollout Cost'},{v:'68%',l:'SA Smartphone Penetration'}]
+    },
+    {
+      id:16, category:'entertainment', featured:false,
+      title:'Ladysmith Black Mambazo Receives Grammy Lifetime Achievement Award',
+      summary:'The legendary South African vocal group is honoured in Los Angeles for six decades of extraordinary contribution to world music.',
+      body:`Ladysmith Black Mambazo received a Grammy Lifetime Achievement Award in Los Angeles, recognising six decades of extraordinary music that brought isicathamiya to global audiences.\n\nFounded by the late Joseph Shabalala in 1960, the group performed an emotional medley at the ceremony. Current artistic director Sibongiseni Shabalala dedicated the award "to the spirit of our founding father and to the people of KwaZulu-Natal who gave us our sound."\n\nThe award was presented by Paul Simon, whose 1986 Graceland album introduced the group worldwide. "There is no music on earth quite like theirs," Simon said.\n\nPresident Ramaphosa congratulated the group, calling it "a proud moment for South Africa and for African culture."`,
+      date:'2025-02-05', readTime:'4 min',
+      image:'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=900&q=80',
+      stats:[{v:'60+',l:'Years of Music'},{v:'5',l:'Grammy Awards Total'},{v:'1960',l:'Year Founded'}]
+    },
+    {
+      id:17, category:'entertainment', featured:false,
+      title:'Netflix\'s "Johannesburg" Series Breaks African Streaming Records',
+      summary:'The South African crime drama becomes Netflix\'s most-watched African original ever, topping charts in 34 countries.',
+      body:`Netflix's South African original "Johannesburg" — a gritty crime drama set across townships, the JSE trading floor, and gleaming northern suburbs — has become the most-watched African original in the platform's history.\n\nThe series attracted 18.7 million viewing households in its first four weeks, surpassing the previous record held by Nigeria's "Glamour Girls."\n\nCreated by Kagiso Lediga and executive produced by Trevor Noah's production company, the show follows three interlocking storylines: a Soweto detective, a Sandton banker uncovering cartel money laundering, and a teenage Hillbrow street photographer whose images threaten powerful interests.\n\n"The appetite for authentic African stories told on our own terms is enormous," said Lediga at the Johannesburg premiere.`,
+      date:'2025-10-12', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&q=80',
+      stats:[{v:'18.7M',l:'Households (4 Weeks)'},{v:'34',l:'Countries Charting'},{v:'#1',l:'All African Originals'}]
+    },
+    {
+      id:18, category:'environment', featured:false,
+      title:'Great Limpopo Park Records Highest Rhino Population in 20 Years',
+      summary:'Conservation authorities announce white rhino numbers have surpassed 2,800, attributed to intensified anti-poaching operations and community programmes.',
+      body:`The white rhino population in the Greater Limpopo Transfrontier Conservation Area has exceeded 2,800 individuals for the first time in two decades, conservation authorities announced at a joint press conference in Skukuza.\n\nSANParks credited intensive anti-poaching operations, demand-reduction campaigns in Vietnam and China, community conservation incentives, and a new rhino horn DNA tracking system improving prosecution success rates.\n\nPoaching incidents in Kruger National Park fell to 421 in 2025, down from a peak of 1,004 in 2013.\n\n"This is a fragile recovery," said SANParks CEO Hapiloe Sello. "We celebrate, but we do not rest."`,
+      date:'2025-05-20', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=900&q=80',
+      stats:[{v:'2,800+',l:'White Rhinos Counted'},{v:'421',l:'2025 Poaching Cases'},{v:'−58%',l:'Drop From 2013 Peak'}]
+    },
+    {
+      id:19, category:'education', featured:false,
+      title:'Matric Pass Rate Reaches 82.4% — Highest in Post-Apartheid History',
+      summary:'The Department of Basic Education announces a record Senior Certificate pass rate, with significant improvements in mathematics and science.',
+      body:`South Africa achieved its highest-ever National Senior Certificate pass rate of 82.4% in the 2025 examinations.\n\nBasic Education Minister Siviwe Gwarube called it "a generational achievement built on sustained investment in teacher development, infrastructure, and curriculum support."\n\nThe mathematics pass rate rose to 58.3% (from 52.7% in 2024) and physical science improved to 63.1%. The Northern Cape recorded the biggest year-on-year improvement of any province, rising from 67% to 76%.\n\nHowever, education NGO Equal Education cautioned: "Pass rates alone do not reflect learning outcomes. Many learners who pass are still not functionally literate or numerate."`,
+      date:'2026-01-07', readTime:'5 min',
+      image:'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80',
+      stats:[{v:'82.4%',l:'National Pass Rate'},{v:'58.3%',l:'Maths Pass Rate'},{v:'63.1%',l:'Physical Science Rate'}]
+    },
+    {
+      id:20, category:'world', featured:false,
+      title:'South Africa Elected to UN Security Council for 2026–27 with Record Votes',
+      summary:'SA wins the African seat with 179 votes, pledging to champion peace in Sudan, the DRC, and broader Security Council reform.',
+      body:`South Africa was elected to a non-permanent UN Security Council seat for 2026–2027, receiving 179 of 193 votes — the highest tally ever recorded for an African candidate.\n\nDIRCO Director-General Zane Dangor said South Africa will prioritise peacekeeping crises in Sudan, the DRC, and the Sahel, while pushing for Security Council reform to give Africa greater representation.\n\n"Africa has a 1.5 billion-person mandate on this council, and we intend to exercise it with courage and independence," said Foreign Minister Ronald Lamola.\n\nThe result came despite some Western nations' discomfort over South Africa's positions on the Russia-Ukraine conflict and its ICJ case against Israel.`,
+      date:'2025-06-05', readTime:'6 min',
+      image:'https://images.unsplash.com/photo-1542601906897-ecd997b8e12e?w=900&q=80',
+      stats:[{v:'179',l:'Votes Received'},{v:'193',l:'Total UN Members'},{v:'2026–27',l:'Council Term'}]
+    },
+  ];
+
+  const breaking = [
+    "🔴 President Ramaphosa to address the nation tonight on GNU budget impasse · 8:45 PM SAST",
+    "🔴 Eskom confirms 68% EAF — load shedding suspension remains in effect",
+    "🔴 Springboks victorious in Dublin — third consecutive Rugby World Cup secured",
+    "🔴 Rand at R17.80 as Q3 2025 GDP growth beats forecasts at 2.1%",
+    "🔴 Bafana Bafana qualify for 2026 FIFA World Cup — ending 28-year absence",
+    "🔴 Ekurhuleni: Hawks seize R2.3bn methamphetamine lab in record Gauteng drug bust",
+    "🔴 South Africa elected to UN Security Council 2026-27 term with record 179 votes",
+    "🔴 Matric class of 2025 achieves historic 82.4% pass rate",
+    "🔴 Cape Town 5G fully live — Sentech completes national rollout to all 9 capitals",
+    "🔴 White rhino population crosses 2,800 in Greater Limpopo — highest in 20 years",
+  ];
+
+  return {
+    getAll: ()         => new Promise(r => setTimeout(() => r([...articles]), 600)),
+    getByCategory: c   => new Promise(r => setTimeout(() => r(c==='all'?[...articles]:articles.filter(a=>a.category===c)), 400)),
+    search: q          => new Promise(r => setTimeout(() => { const t=q.toLowerCase(); r(articles.filter(a=>a.title.toLowerCase().includes(t)||a.summary.toLowerCase().includes(t)||a.category.includes(t))); }, 300)),
+    getFeatured: ()    => new Promise(r => setTimeout(() => r(articles.filter(a=>a.featured)), 500)),
+    getTrending: ()    => new Promise(r => setTimeout(() => r([...articles].sort(()=>Math.random()-.5).slice(0,6)), 400)),
+    getBreaking: ()    => [...breaking],
+    getById: id        => articles.find(a=>a.id===id),
+  };
+})();
+
+// ─────────────────────────────────────────────
+//  DYNAMIC DATA ENGINE
+// ─────────────────────────────────────────────
+const DynData = (() => {
+  const cities = [
+    {id:'JHB', name:'JOHANNESBURG', region:'Gauteng',      baseTemp:27, icon:'⛅', desc:'Partly Cloudy',    hum:42, wind:14, feels:25, uv:7},
+    {id:'CPT', name:'CAPE TOWN',    region:'Western Cape', baseTemp:19, icon:'🌬️', desc:'Windy & Clear',    hum:68, wind:28, feels:16, uv:5},
+    {id:'DBN', name:'DURBAN',       region:'KZN',          baseTemp:26, icon:'🌤️', desc:'Humid & Sunny',    hum:78, wind:18, feels:30, uv:8},
+    {id:'GQB', name:'GQEBERHA',     region:'Eastern Cape', baseTemp:22, icon:'☁️', desc:'Overcast',         hum:72, wind:22, feels:20, uv:4},
+    {id:'BFN', name:'BLOEMFONTEIN', region:'Free State',   baseTemp:31, icon:'☀️', desc:'Hot & Sunny',      hum:28, wind:10, feels:33, uv:9},
+  ];
+
+  const mkts = [
+    {id:'rand', name:'ZAR / USD',     base:17.80,  step:.08,  fmt: v=>'R'+v.toFixed(2)},
+    {id:'jse',  name:'JSE ALL SHARE', base:94320,  step:120,  fmt: v=>v.toLocaleString('en-ZA',{maximumFractionDigits:0})},
+    {id:'oil',  name:'BRENT CRUDE',   base:82.14,  step:.60,  fmt: v=>'$'+v.toFixed(2)},
+    {id:'gold', name:'GOLD (OZ)',      base:2018,   step:8,    fmt: v=>'$'+v.toLocaleString('en-US',{maximumFractionDigits:0})},
+    {id:'gbp',  name:'ZAR / GBP',     base:22.45,  step:.10,  fmt: v=>'R'+v.toFixed(2)},
+    {id:'eur',  name:'ZAR / EUR',      base:19.30,  step:.09,  fmt: v=>'R'+v.toFixed(2)},
+  ];
+
+  let cityIdx = 0;
+  let mktVals = mkts.map(m=>({...m, cur:m.base, prev:m.base}));
+  let eaf = 68.4;
+
+  const ri = (b,r) => Math.round(b+(Math.random()*r*2-r));
+  const rf = (b,r) => +(b+(Math.random()*r*2-r)).toFixed(2);
+
+  return {
+    cities,
+    cityIdx: ()      => cityIdx,
+    setCity: i       => { cityIdx=i; },
+    weather: ()      => {
+      const c=cities[cityIdx];
+      return {city:c.name, region:c.region, icon:c.icon, desc:c.desc,
+        temp:ri(c.baseTemp,2), hum:ri(c.hum,4), wind:ri(c.wind,3), feels:ri(c.feels,2), uv:ri(c.uv,1)};
+    },
+    tickMkts: ()     => {
+      mktVals = mktVals.map(m=>{
+        const prev=m.cur;
+        const cur = Math.max(m.base*.82, m.cur+((Math.random()-.48)*m.step));
+        return {...m, prev, cur};
+      });
+      return mktVals;
+    },
+    tickEAF: ()      => { eaf=Math.max(60,Math.min(76,+(eaf+(Math.random()*.6-.3)).toFixed(1))); return eaf; },
+    getMkt: id       => mktVals.find(m=>m.id===id),
+  };
+})();
+
+// ─────────────────────────────────────────────
+//  APP
+// ─────────────────────────────────────────────
+let currentCat = 'all';
+const bsModal = new bootstrap.Modal(document.getElementById('articleModal'));
+
+const catMap = {politics:'cat-politics',economy:'cat-economy',sports:'cat-sports',crime:'cat-crime',health:'cat-health',tech:'cat-tech',entertainment:'cat-entertainment',environment:'cat-environment',education:'cat-education',world:'cat-world'};
+const badge = cat => `<span class="cat-badge ${catMap[cat]||'cat-politics'}">${cat}</span>`;
+const fmtDate = d => new Date(d).toLocaleDateString('en-ZA',{day:'numeric',month:'short',year:'numeric'});
+const tsNow = () => { const n=new Date(); return `${n.getHours().toString().padStart(2,'0')}:${n.getMinutes().toString().padStart(2,'0')}:${n.getSeconds().toString().padStart(2,'0')} SAST`; };
+
+// Date header
+document.getElementById('currentDate').textContent =
+  new Date().toLocaleDateString('en-ZA',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).toUpperCase();
+
+// Ticker
+(function() {
+  const items = MockAPI.getBreaking();
+  document.getElementById('tickerContent').innerHTML = [...items,...items].map(b=>`<span style="padding-right:52px">⬥ ${b}</span>`).join('');
+})();
+
+// ── Weather ──────────────────────────────────
+(function buildWeatherBtns() {
+  document.getElementById('wcityBtns').innerHTML = DynData.cities.map((c,i)=>
+    `<button class="wcity-btn${i===0?' active':''}" onclick="switchCity(${i},this)">${c.id}</button>`
+  ).join('');
+})();
+
+function renderWeather(animate) {
+  const w = DynData.weather();
+  const set = (id, val) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (animate && el.textContent !== String(val)) {
+      el.style.opacity = '0.3';
+      setTimeout(()=>{ el.textContent=val; el.style.opacity='1'; el.style.transition='opacity .35s'; }, 220);
+    } else { el.textContent = val; }
+  };
+  set('wCity',  `${w.city} · ${w.region}`);
+  set('wTemp',  `${w.temp}°C`);
+  set('wIcon',  w.icon);
+  set('wDesc',  w.desc);
+  set('wHum',   `${w.hum}%`);
+  set('wWind',  `${w.wind} km/h`);
+  set('wFeels', `${w.feels}°C`);
+  set('wUV',    `${w.uv} ${w.uv>=8?'Very High':w.uv>=6?'High':w.uv>=4?'Moderate':'Low'}`);
+  document.getElementById('wUpdated').textContent = `UPDATED ${tsNow()}`;
+}
+
+window.switchCity = function(idx, btn) {
+  DynData.setCity(idx);
+  document.querySelectorAll('.wcity-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderWeather(true);
+};
+
+renderWeather(false);
+
+// ── Markets ──────────────────────────────────
+function renderMkts(vals) {
+  document.getElementById('mktRows').innerHTML = vals.map(m => {
+    const up = m.cur >= m.prev;
+    const pct = Math.abs(((m.cur-m.prev)/m.prev)*100).toFixed(2);
+    return `<div class="mkt-row">
+      <span class="mkt-name">${m.name}</span>
+      <span class="mkt-val" style="color:${up?'#16a34a':'#dc2626'}">${m.fmt(m.cur)}</span>
+      <span class="mkt-chg ${up?'chg-up':'chg-down'}">${up?'▲':'▼'} ${pct}%</span>
+    </div>`;
+  }).join('');
+}
+
+function renderHeader(vals) {
+  const pairs = [
+    {mId:'rand', elVal:'hRand',  elArr:'hRandArrow'},
+    {mId:'jse',  elVal:'hJSE',   elArr:'hJSEArrow'},
+    {mId:'oil',  elVal:'hOil',   elArr:'hOilArrow'},
+    {mId:'gold', elVal:'hGold',  elArr:'hGoldArrow'},
+  ];
+  pairs.forEach(({mId,elVal,elArr}) => {
+    const m = vals.find(v=>v.id===mId); if(!m) return;
+    const up = m.cur >= m.prev;
+    const vEl = document.getElementById(elVal);
+    const aEl = document.getElementById(elArr);
+    vEl.textContent = m.fmt(m.cur);
+    vEl.className = `sp-value ${up?'up':'down'}`;
+    aEl.textContent = up ? '▲' : '▼';
+    aEl.style.color = up ? '#4ade80' : '#ef4444';
+  });
+}
+
+function renderEAF(val) {
+  const bar = document.getElementById('ewBar');
+  const ok = val >= 65;
+  bar.style.width = val + '%';
+  bar.style.background = val>=65?'var(--green)':val>=55?'var(--gold)':'var(--red)';
+  document.getElementById('ewBadge').textContent = ok ? 'SUSPENDED' : `STAGE ${Math.ceil((65-val)/5)}`;
+  document.getElementById('ewBadge').className = `ew-badge ${ok?'ew-ok':'ew-bad'}`;
+  document.getElementById('ewPct').textContent = val.toFixed(1) + '%';
+  document.getElementById('ewEAF').innerHTML = `${val.toFixed(1)}% <small>EAF</small>`;
+  document.getElementById('ewUpdated').textContent = `LAST UPDATED: ${tsNow()}`;
+}
+
+// Initial dynamic render
+let mktVals = DynData.tickMkts();
+renderMkts(mktVals);
+renderHeader(mktVals);
+renderEAF(DynData.tickEAF());
+
+// Live tick every 5 seconds
+setInterval(() => {
+  mktVals = DynData.tickMkts();
+  renderMkts(mktVals);
+  renderHeader(mktVals);
+  renderEAF(DynData.tickEAF());
+  renderWeather(true);
+}, 5000);
+
+// ── Hero ─────────────────────────────────────
+async function buildHero() {
+  const featured = await MockAPI.getFeatured();
+  if (!featured.length) return;
+  const [main, ...sides] = featured;
+  document.getElementById('heroSection').innerHTML = `
+    <div class="hero-grid">
+      <div class="hero-main fade-in" onclick="openArticle(${main.id})">
+        <img src="${main.image}" alt="${main.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80'"/>
+        <div class="hero-overlay">
+          <div class="hero-cat">${main.category.toUpperCase()}</div>
+          <h1>${main.title}</h1>
+          <p>${main.summary}</p>
+          <div class="hero-meta">
+            <strong style="color:var(--gold)">${AUTHOR}</strong> &nbsp;·&nbsp; ${fmtDate(main.date)} &nbsp;·&nbsp; ${main.readTime} read
+          </div>
+        </div>
+      </div>
+      ${sides.slice(0,2).map(s=>`
+        <div class="hero-side fade-in" onclick="openArticle(${s.id})">
+          <img src="${s.image}" alt="${s.title}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80'"/>
+          <div class="side-content">
+            <div>${badge(s.category)}<h3>${s.title}</h3></div>
+            <div class="art-meta">${AUTHOR} · ${fmtDate(s.date)}</div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+}
+
+// ── Cards ─────────────────────────────────────
+function buildCards(articles) {
+  const grid = document.getElementById('newsGrid');
+  const noRes = document.getElementById('noResults');
+  if (!articles.length) { grid.innerHTML=''; noRes.style.display='block'; return; }
+  noRes.style.display = 'none';
+  const top = articles.slice(0,6);
+  grid.className = 'row g-3 stagger';
+  grid.innerHTML = top.map(a=>`
+    <div class="col-md-6">
+      <div class="news-card" onclick="openArticle(${a.id})">
+        <img src="${a.image}" alt="${a.title}" loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80'"/>
+        <div class="card-body-custom">
+          ${badge(a.category)}
+          <h4>${a.title}</h4>
+          <p>${a.summary}</p>
+        </div>
+        <div class="card-footer-custom">
+          <span class="byline"><i class="fa fa-pen-nib" style="margin-right:5px;color:var(--gold)"></i>${AUTHOR} · ${fmtDate(a.date)}</span>
+          <a href="#" class="read-more" onclick="event.stopPropagation();openArticle(${a.id});return false;">READ →</a>
+        </div>
+      </div>
+    </div>`).join('');
+
+  const list = document.getElementById('listGrid');
+  const rest = articles.slice(6);
+  if (!rest.length) { list.innerHTML=''; return; }
+  list.innerHTML = rest.map(a=>`
+    <div class="list-card" onclick="openArticle(${a.id})">
+      <img src="${a.image}" alt="${a.title}" loading="lazy"
+        onerror="this.src='https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80'"/>
+      <div class="list-card-content">
+        ${badge(a.category)}
+        <h5>${a.title}</h5>
+        <p>${a.summary}</p>
+        <div class="art-meta">${AUTHOR} · ${fmtDate(a.date)} · ${a.readTime} read</div>
+      </div>
+    </div>`).join('');
+}
+
+// ── Trending ──────────────────────────────────
+async function buildTrending() {
+  const t = await MockAPI.getTrending();
+  document.getElementById('trendingList').innerHTML = t.map((a,i)=>`
+    <div class="trending-item" onclick="openArticle(${a.id})">
+      <div class="trending-num">0${i+1}</div>
+      <div>${badge(a.category)}<h6>${a.title}</h6><div class="art-meta">${fmtDate(a.date)}</div></div>
+    </div>`).join('');
+}
+
+// ── Filter ────────────────────────────────────
+async function filterCat(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('sectionLabel').textContent = cat==='all' ? 'LATEST NEWS' : cat.toUpperCase()+' NEWS';
+  document.getElementById('searchInput').value = '';
+  document.getElementById('newsGrid').innerHTML =
+    `<div class="col-12" style="text-align:center;padding:40px;font-family:'Space Mono',monospace;color:var(--mid-gray)">
+      <i class="fa fa-circle-notch fa-spin" style="font-size:24px;margin-bottom:12px;display:block"></i>LOADING…</div>`;
+  buildCards(await MockAPI.getByCategory(cat));
+}
+
+// ── Search ────────────────────────────────────
+let searchTimer;
+function doSearch(q) {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(async () => {
+    if (!q.trim()) {
+      document.getElementById('sectionLabel').textContent = currentCat==='all' ? 'LATEST NEWS' : currentCat.toUpperCase()+' NEWS';
+      buildCards(await MockAPI.getByCategory(currentCat));
+      return;
+    }
+    document.getElementById('sectionLabel').textContent = `SEARCH: "${q.toUpperCase()}"`;
+    buildCards(await MockAPI.search(q));
+  }, 300);
+}
+
+// ── Modal ─────────────────────────────────────
+function openArticle(id) {
+  const a = MockAPI.getById(id);
+  if (!a) return;
+  document.getElementById('mCat').innerHTML = badge(a.category);
+  document.getElementById('mTitle').textContent = a.title;
+  document.getElementById('mMeta').textContent = `${fmtDate(a.date)} · ${a.readTime} read`;
+  const img = document.getElementById('mImage');
+  img.src = a.image;
+  img.alt = a.title;
+  img.onerror = () => img.src='https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80';
+  const statsEl = document.getElementById('mStats');
+  if (a.stats && a.stats.length) {
+    statsEl.style.display='flex';
+    statsEl.innerHTML = a.stats.map(s=>`<div class="modal-stat"><div class="msv">${s.v}</div><div class="msl">${s.l}</div></div>`).join('');
+  } else { statsEl.style.display='none'; }
+  document.getElementById('mBody').innerHTML = a.body.split('\n\n').map(p=>`<p>${p}</p>`).join('');
+  bsModal.show();
+}
+
+// ── Init ──────────────────────────────────────
+async function init() {
+  await buildHero();
+  buildCards(await MockAPI.getAll());
+  buildTrending();
+}
+init();
+</script>
+</body>
+</html>
